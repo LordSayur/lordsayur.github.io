@@ -6,50 +6,56 @@ html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%;}
 
 /*  ----------------------- BODY --------------------------- */
 body{
-    font-family: $defaultFont;
-    font-weight: $normalWeight;
     font-size: 16px;
+    background-color: $darkBrown;
 }
 
 
 /*  ----------------------- HEADER --------------------------- */
 header {
-    background-color: $primaryColor;
-    color: $secondaryColor;
-    padding: 1rem $gutter;
-    
+    nav {
+        background-color: $orange;
+    }
+    section.intro {
+        .buttons {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+            div {
+                text-align: left;
+            }
+            div:nth-of-type(1) {
+                width: 2.5rem;
+            }
+            div:nth-of-type(2) {
+                width: 3.5rem;
+            }
+            div:nth-of-type(3) {
+                width: 4.5rem;
+            }
+            div:nth-of-type(4) {
+                width: 5rem;
+            }
+        }
+        figure {
+            height: 50vh;
+            margin: auto;
+            object-fit: cover;
+            img {
+                height: 100%;
+                display: block;
+                margin: auto;
+            }
+        } // end figure
+    } // end of ls-intro
 } // end of header
-
-
-
-/*  ----------------------- NAVIGATION --------------------------- */
-nav {
-    background-color: $secondaryColor;
-    border-bottom: 1px solid rgba(0,0,0,0.3);
-    
-} // end nav
-
 
 /*  ----------------------- MAIN --------------------------- */
 main {
-    
-    figure {
-        margin: auto;
-        img {
-            width: 100%;
-            display: block;
-            margin: auto;
-        }
-    } // end figure
-    
-    div {
-        &.sketchfab-embed-wrapper {
-            margin: auto;
-            iframe {
-                margin: auto;
-            }
-        }
-    }
+    section.sketchfab {
+        
+    } // end of ls-sketchfab
 } // end main
 
 

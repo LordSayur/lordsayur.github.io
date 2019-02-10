@@ -23,68 +23,56 @@ time, mark, audio, video {
   outline: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-}
+  background: transparent; }
 
 body {
-  line-height: 1;
-}
+  line-height: 1; }
 
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-  display: block;
-}
+  display: block; }
 
 nav ul {
-  list-style: none;
-}
+  list-style: none; }
 
 blockquote, q {
-  quotes: none;
-}
+  quotes: none; }
 
 blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
-  content: none;
-}
+  content: none; }
 
 a {
   margin: 0;
   padding: 0;
   font-size: 100%;
   vertical-align: baseline;
-  background: transparent;
-}
+  background: transparent; }
 
 /* change colours to suit your needs */
 ins {
   background-color: #ff9;
   color: #000;
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 /* change colours to suit your needs */
 mark {
   background-color: #ff9;
   color: #000;
   font-style: italic;
-  font-weight: bold;
-}
+  font-weight: bold; }
 
 del {
-  text-decoration: line-through;
-}
+  text-decoration: line-through; }
 
 abbr[title], dfn[title] {
   border-bottom: 1px dotted;
-  cursor: help;
-}
+  cursor: help; }
 
 table {
   border-collapse: collapse;
-  border-spacing: 0;
-}
+  border-spacing: 0; }
 
 /* change border colour to suit your needs */
 hr {
@@ -93,131 +81,67 @@ hr {
   border: 0;
   border-top: 1px solid #cccccc;
   margin: 1em 0;
-  padding: 0;
-}
+  padding: 0; }
 
 input, select {
-  vertical-align: middle;
-}
+  vertical-align: middle; }
 
 /* Prevent adjustments of font size after orientation changes in IE on Windows Phone and in iOS.  */
 html {
   -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
-}
+  -ms-text-size-adjust: 100%; }
 
 /*  apply a natural box layout model to all elements  */
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /*  ----------------------- BODY --------------------------- */
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
   font-size: 16px;
-}
+  background-color: #343331; }
 
 /*  ----------------------- HEADER --------------------------- */
-header {
-  background-color: #424e64;
-  color: #bbc2ca;
-  padding: 1rem 2%;
-}
-
-/*  ----------------------- NAVIGATION --------------------------- */
-nav {
-  background-color: #bbc2ca;
-  border-bottom: 1px solid rgba(0, 0, 0, 0.3);
-}
+header nav {
+  background-color: #FF5938; }
+header section.intro .buttons {
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly; }
+  header section.intro .buttons div {
+    text-align: left; }
+  header section.intro .buttons div:nth-of-type(1) {
+    width: 2.5rem; }
+  header section.intro .buttons div:nth-of-type(2) {
+    width: 3.5rem; }
+  header section.intro .buttons div:nth-of-type(3) {
+    width: 4.5rem; }
+  header section.intro .buttons div:nth-of-type(4) {
+    width: 5rem; }
+header section.intro figure {
+  height: 50vh;
+  margin: auto;
+  object-fit: cover; }
+  header section.intro figure img {
+    height: 100%;
+    display: block;
+    margin: auto; }
 
 /*  ----------------------- MAIN --------------------------- */
-main figure {
-  margin: auto;
-}
-main figure img {
-  width: 100%;
-  display: block;
-  margin: auto;
-}
-main div.sketchfab-embed-wrapper {
-  margin: auto;
-}
-main div.sketchfab-embed-wrapper iframe {
-  margin: auto;
-}
-
 /*  ----------------------- FOOTER --------------------------- */
 /*----- Clearfix: Force an Element not to collapse -----*/
 .clearfix:after {
   content: "";
   display: table;
-  clear: both;
-}
+  clear: both; }
 
 @media only screen and (min-width: 35rem) {
-  /*  ----------------------- MAIN --------------------------- */
-  main figure.photo {
-    width: 46%;
-    float: left;
-  }
-  main div.blog article {
-    float: left;
-    width: 46%;
-  }
-  main div.blog article:nth-child(2n+1) {
-    clear: left;
-  }
-  main div.pop {
-    padding: 2rem 0;
-  }
-  main div.pop .title {
-    font-size: 4rem;
-  }
-  main div.pop .subtitle {
-    font-size: 3rem;
-  }
-  main div.pop .copy {
-    padding: 2rem 0 0 0;
-  }
-  main div.pop .copy span {
-    font-size: 5rem;
-  }
-}
+  /*  ----------------------- MAIN --------------------------- */ }
 @media only screen and (min-width: 60rem) {
   /*  ----------------------- BODY --------------------------- */
   /*  ----------------------- NAVIGATION --------------------------- */
-  nav ul {
-    margin-left: 2%;
-    border-left: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  nav ul li {
-    width: auto;
-  }
-  nav ul li:last-child {
-    border-right: 1px solid rgba(0, 0, 0, 0.3);
-  }
-  nav ul li a {
-    padding: .5rem 1rem;
-  }
-
-  /*  ----------------------- MAIN --------------------------- */
-  main figure.photo {
-    width: 21%;
-    float: left;
-  }
-  main div.blog article {
-    float: left;
-    width: 29.33%;
-  }
-  main div.blog article:nth-child(2n+1) {
-    clear: none;
-  }
-  main div.blog article:nth-child(3n+1) {
-    clear: left;
-  }
-}
+  /*  ----------------------- MAIN --------------------------- */ }
 
 /*# sourceMappingURL=styles.css.map */
